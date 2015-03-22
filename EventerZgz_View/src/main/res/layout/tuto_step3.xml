@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:text="@string/question_map"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+
+        <include
+            android:id="@+id/layoutMap"
+            layout="@layout/view_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="70dp"
+            android:layout_below="@+id/layoutInfo" />
+
+    </LinearLayout>
+
+    <com.eventerzgz.view.utils.ButtonView
+        android:id="@+id/buttonClose"
+        ripple:alphaFactor="0.7"
+        ripple:hover="true"
+        ripple:rippleColor="#58FAAC"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/card_bk"
+        android:gravity="center"
+        android:text="@string/saltar"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

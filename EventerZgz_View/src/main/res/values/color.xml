@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_shadow">#7F000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blackSemiTransparent">#80000000</color>
+
+    <!-- ItemsMenu -->
+    <color name="colorTurismo">#2ECC40</color> <!--#EE9F35  #87C976 -->
+    <color name="colorActualidad">#1ac5f7</color><!-- 7BDEFB #FD615D -->
+    <color name="colorColabora">#f9807c</color><!-- FD615D   #a98fbe -->
+    <color name="colorGuia">#EE9F35</color><!-- #7BDEFB -->
+    <color name="colorMoreInfo">#8DBC10</color>
+
+    <!-- Slidermenu -->
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="black_transparent"> #80000000</color>
+
+    <color name="primary_color">#c0392b</color>
+    <color name="primary_color_light">#e74c3c</color>
+
+    <color name="primary_color_accent">#ee8175</color>
+
+    <color name="fab_color_pressed">#007787</color>
+    <color name="fab_color_shadow">#44000000</color>
+    <color name="style_color_accent">#01bcd5</color>
+</resources>

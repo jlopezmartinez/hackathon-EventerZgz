@@ -1,0 +1,47 @@
+apply plugin: 'android-library'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+evaluationDependsOn(':EventerZgz_Interactor')
+
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    dexOptions {
+        preDexLibraries = false
+    }
+
+
+    lintOptions {
+        abortOnError false
+    }
+
+
+    
+    productFlavors {
+    }
+}
+
+
+dependencies {
+    compile project(':EventerZgz_Interactor')
+    compile 'io.reactivex:rxandroid:0.23.0'
+    compile 'com.android.support:support-v4:20.0.0'
+    //testCompile group: 'junit', name: 'junit', version: '4.11'
+}

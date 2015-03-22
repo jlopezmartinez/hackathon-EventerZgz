@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="60dp"
+            android:text="@string/welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/primary_color"
+            android:textSize="40sp"></TextView>
+
+    </LinearLayout>
+
+    <com.eventerzgz.view.utils.ButtonView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/saltar"
+        android:id="@+id/buttonClose"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        ripple:alphaFactor="0.7"
+        android:background="@drawable/card_bk"
+        ripple:rippleColor="@color/primary_color"
+        ripple:hover="true"/>
+</RelativeLayout>
